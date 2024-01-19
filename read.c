@@ -1,22 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Filenames shouldn't really be bigger than this
+#define NAME_SIZE 256
+
 //write a function that reads in a file
 char* readFile(char *);
 
-//void getFileName(FILE *);
-void getFileName();
+//void getFilename(FILE *);
+void getFilename();
 
 int main(void) {
-	getFileName();
+	getFilename();
 	return 0;
 }
 
-//void getFileName(FILE *fp) {
-void getFileName() {
-	char buffer[BUFSIZ];
+//void getFilename(FILE *fp) {
+void getFilename() {
+	char buffer[NAME_SIZE];
 	printf("Enter a filename:\n");
-	fgets(buffer, BUFSIZ, stdin);
+	fgets(buffer, NAME_SIZE, stdin);
 	printf("got filename:\n%s", buffer);
 }
 /*
