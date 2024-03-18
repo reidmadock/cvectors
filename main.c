@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Gotta get the ball rolling somehow
+
 void scalar_multi(int *, size_t, int);
 
 int main() {
